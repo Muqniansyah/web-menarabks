@@ -1,0 +1,183 @@
+---
+---
+<section class="strategi">
+  <div class="container">
+
+    <h2>🚀 Strategi Mewujudkan Ekspor Kayu yang Berkelanjutan</h2>
+
+    <p class="intro">
+      Untuk mendukung ekspor yang berkelanjutan dan tetap menguntungkan, perusahaan dapat menerapkan strategi berikut:
+    </p>
+
+    <!-- Strategi Cards -->
+    <div class="strategi-grid">
+      <div class="card">🌱 <strong>Pengelolaan sumber kayu secara berkelanjutan</strong></div>
+      <div class="card">📜 <strong>Memastikan kelengkapan sertifikasi legalitas</strong></div>
+      <div class="card">⚙️ <strong>Produksi yang efisien dan minim limbah</strong></div>
+      <div class="card">🎯 <strong>Peningkatan kualitas dan standarisasi produk</strong></div>
+      <div class="card">🤝 <strong>Membangun kemitraan ekspor yang kredibel</strong></div>
+    </div>
+
+    <!-- PROMO SECTION -->
+    <div class="promo">
+      <h3>🤝 Solusi Ekspor Berkelanjutan Bersama <span>PT Menara Bekasi</span></h3>
+
+      <p class="promo-desc">
+        Jika Anda mencari mitra terpercaya dalam penyediaan kayu berkualitas dan legal, kami siap mendukung kebutuhan ekspor Anda.
+      </p>
+
+      <ul class="promo-benefit">
+        <li>✅ Kayu legal dengan sertifikasi lengkap (termasuk SVLK)</li>
+        <li>🏗️ Proses produksi profesional dan konsisten</li>
+        <li>🌏 Pengalaman ekspor ke berbagai negara</li>
+        <li>📦 Pengiriman yang aman & terkoordinasi</li>
+      </ul>
+
+      <a href="https://wa.me/6285817298071" class="cta-button" rel="noopener noreferrer" target="_blank">Hubungi Kami</a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  :root {
+    --green-dark: #0e3328;
+    --green-accent: #1b5e48;
+    --white: #ffffff;
+  }
+
+  .strategi {
+    position: relative;
+    background: var(--green-dark);
+    padding: 90px 20px;
+    color: var(--white);
+    overflow: hidden;
+  }
+
+    /* === HIASAN BESAR LEBIH TERLIHAT === */
+  .strategi::before {
+    content: "";
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    background: radial-gradient(circle at 30% 30%, #3ed6a0 0%, transparent 70%);
+    top: -250px;
+    left: -250px;
+    opacity: 0.35;  /* dulu 0.22 → sekarang lebih nyata */
+    z-index: 0;
+  }
+
+  .strategi::after {
+    content: "";
+    position: absolute;
+    width: 780px;
+    height: 780px;
+    background: radial-gradient(circle at 70% 70%, #aad7c7 0%, transparent 70%);
+    bottom: -300px;
+    right: -260px;
+    opacity: 0.38; /* juga diperkuat */
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .intro {
+    max-width: 750px;
+    margin: auto;
+    opacity: .9;
+    margin-bottom: 50px;
+    line-height: 1.6;
+  }
+
+  .strategi-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin-bottom: 65px;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.08);
+    padding: 18px 20px;
+    border-radius: 14px;
+    font-size: 1.05rem;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: transform .25s ease, background .3s ease;
+  }
+
+  .card:hover {
+    background: rgba(255,255,255,0.13);
+    transform: translateY(-4px);
+  }
+
+  /* PROMO AREA */
+  .promo {
+    background: var(--white);
+    color: var(--green-dark);
+    border-radius: 16px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  }
+
+  .promo h3 {
+    font-size: 1.7rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+  }
+
+  .promo h3 span {
+    color: var(--green-accent);
+  }
+
+  .promo-desc {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 28px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .promo-benefit {
+    list-style: none;
+    margin: 0 auto 32px;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+  }
+
+  .promo-benefit li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+  }
+
+  .cta-button {
+    background: var(--green-accent);
+    padding: 12px 26px;
+    border-radius: 8px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background .25s;
+  }
+
+  .cta-button:hover {
+    background: #144635;
+  }
+
+  @media(max-width: 750px){
+    .promo-benefit { text-align: center; }
+  }
+</style>

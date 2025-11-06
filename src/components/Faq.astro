@@ -1,0 +1,133 @@
+<section class="faq-section">
+  <div class="container">
+    <h2>❓ Pertanyaan yang Sering Diajukan</h2>
+    <p class="faq-desc">
+      Berikut beberapa pertanyaan yang umum terkait kayu ramah lingkungan dan ekspor.
+    </p>
+
+    <div class="faq-list">
+
+      <!-- FAQ Item -->
+      <div class="faq-item">
+        <button class="faq-question">
+          Apa yang dimaksud dengan kayu ramah lingkungan?
+          <span>#</span>
+        </button>
+        <div class="faq-answer">
+          Kayu ramah lingkungan adalah kayu yang berasal dari hutan yang dikelola secara berkelanjutan,
+          dengan penebangan terkontrol dan penanaman kembali.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Apakah kayu ramah lingkungan wajib memiliki sertifikasi?
+          <span>#</span>
+        </button>
+        <div class="faq-answer">
+          Ya. Sertifikasi seperti SVLK, FSC, atau PEFC menjadi bukti bahwa kayu diperoleh secara legal dan tidak merusak hutan.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Mengapa negara tujuan ekspor sangat ketat soal sumber kayu?
+          <span>#</span>
+        </button>
+        <div class="faq-answer">
+          Karena banyak negara menerapkan kebijakan anti-pembalakan liar dan mendukung perdagangan yang berkelanjutan.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Apakah PT Menara Bekasi dapat membantu pengurusan kebutuhan ekspor?
+          <span>#</span>
+        </button>
+        <div class="faq-answer">
+          Tentu. Kami menyediakan kayu bersertifikasi lengkap serta dukungan proses ekspor mulai dokumentasi hingga pengiriman.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-section {
+    padding: 90px 20px;
+    background: #f7faf8;
+  }
+
+  .faq-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  .faq-desc {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 48px;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  .faq-list {
+    max-width: 850px;
+    margin: auto;
+  }
+
+  .faq-item {
+    margin-bottom: 14px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #e6e6e6;
+    overflow: hidden;
+    transition: .3s;
+  }
+
+  .faq-question {
+    width: 100%;
+    padding: 18px 22px;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #183b2c;
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 0 22px 18px;
+    font-size: .97rem;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  /* Active State */
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+
+  .faq-item.active .faq-question span {
+    transform: rotate(45deg);
+  }
+
+  .faq-question span {
+    transition: .3s;
+  }
+</style>
+
+<script is:inline>
+  document.querySelectorAll(".faq-question").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.parentElement.classList.toggle("active");
+    });
+  });
+</script>
+

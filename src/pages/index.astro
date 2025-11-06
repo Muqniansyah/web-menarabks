@@ -4,6 +4,9 @@ import Pengertian from "../components/Pengertian.astro";
 import Pentingnya from "../components/Pentingnya.astro";
 import Sertifikasi from "../components/Sertifikasi.astro";
 import Strategi from "../components/Strategi.astro";
+import Faq from "../components/Faq.astro";
+import Swiper from "../components/Swiper.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Kayu Ramah Lingkungan">
@@ -21,15 +24,15 @@ import Strategi from "../components/Strategi.astro";
     <section id="informasi" class="info-panel">
       <div class="info-grid">
         <div class="info-item">
-          <h4>♻️ Berkelanjutan</h4>
+          <h3>♻️ Berkelanjutan</h3>
           <p>Kayu dari hutan yang dikelola secara bertanggung jawab.</p>
         </div>
         <div class="info-item">
-          <h4>🌍 Ramah Lingkungan</h4>
+          <h3>🌍 Ramah Lingkungan</h3>
           <p>Mengurangi dampak kerusakan alam dalam proses industri.</p>
         </div>
         <div class="info-item">
-          <h4>✅ Bersertifikasi</h4>
+          <h3>✅ Bersertifikasi</h3>
           <p>Diakui secara internasional untuk pasar ekspor.</p>
         </div>
       </div>
@@ -44,11 +47,17 @@ import Strategi from "../components/Strategi.astro";
       <div class="workspace-text">
         <h2>Kami Hadir untuk Mendukung Ekspor Kayu Berkelanjutan</h2>
         <p>Informasi, panduan, dan wawasan mendalam terkait standar industri kayu dunia.</p>
-        <a class="btn-cta">Pesan Sekarang</a>
+        <a class="btn-cta" href="https://menarabekasilestari.site/" rel="noopener noreferrer" target="_blank">Pesan Sekarang</a>
       </div>
     </section>
 
     <Pengertian />
+    <Pentingnya />
+    <Sertifikasi />
+    <Strategi />
+    <Faq />
+    <Swiper client:load />
+    <Footer />
   </main>
 
   <style>

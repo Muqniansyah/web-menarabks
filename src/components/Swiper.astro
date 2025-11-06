@@ -1,0 +1,146 @@
+---
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+const slides = [
+  {
+    img: "/slider/kemas.png",
+    title: "Website Resmi PT.Kemas Kayu Indonesia",
+    text: "“Kami selalu memastikan kualitas kayu sesuai standar internasional.”",
+    link: "https://menarabekasilestari.site/",
+  },
+  {
+    img: "/slider/menarabekasi.png",
+    title: "Pastikan Pallet Anda Siap Kirim Tanpa Risiko!",
+    text: "“Kerjasama hanya dengan vendor terpercaya & berpengalaman.”",
+    link: "https://kemaskayuindonesia.my.id/menarabekasi/",
+  },
+  {
+    img: "/slider/kemaskayu.png",
+    title: "Ekspor bisa ditolak hanya karena kemasan kayu tidak sesuai standar ISPM #15!",
+    text: "“Pastikan kemasan kayu Anda sudah sesuai aturan internasional agar ekspor tidak bermasalah.”",
+    link: "https://kemaskayuindonesia.my.id/",
+  },
+];
+---
+
+<section class="swiper-section">
+  <div class="container">
+    <h2>Kunjungi Artikel Kami</h2>
+    <p class="subtitle">Temukan Insight Berharga dari Artikel Lainnya</p>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        {slides.map((slide) => (
+          <div class="swiper-slide">
+            <a href={slide.link} target="_blank" rel="noopener noreferrer" class="slide-card">
+              <img src={slide.img} alt={slide.title} />
+              <h3>{slide.title}</h3>
+              <p>{slide.text}</p>
+            </a>
+          </div>
+        ))}
+      </div>
+
+      <!-- Tombol Navigasi -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .swiper-section {
+    background: white;
+    padding: 80px 20px 100px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .swiper {
+    margin-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .slide-card {
+    display: block;
+    background: #fff;
+    border-radius: 18px;
+    padding: 24px;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+  }
+
+  .slide-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  }
+
+  .slide-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 18px;
+  }
+
+  .slide-card h3 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1b5e48;
+  }
+
+  .slide-card p {
+    font-size: 0.95rem;
+    color: #565656;
+    line-height: 1.5;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #1b5e48;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #1b5e48;
+  }
+</style>
+
+<script>
+  import Swiper from "swiper/bundle";
+  import "swiper/css/bundle";
+
+  if (typeof window !== "undefined") {
+    window.addEventListener("DOMContentLoaded", () => {
+      new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
+    });
+  }
+</script>
