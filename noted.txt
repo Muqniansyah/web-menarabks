@@ -1,0 +1,60 @@
+yang udah :
+1. setup awal dengan astro dan css
+-manage : npm run dev
+
+2. cari keywoard untuk judul, meta description, h1 dan h2
+- judul : Menara Bekasi | Mengenal Kayu Ramah Lingkungan dan Sertifikasi Hijau untuk Ekspor Berkelanjutan
+- h1 : Mengenal Kayu Ramah Lingkungan dan Sertifikasi Hijau untuk Ekspor Berkelanjutan
+- h2 :
+#1: Apa Itu Kayu Ramah Lingkungan?
+#2: Pentingnya Kayu Ramah Lingkungan dalam Industri Ekspor
+#3: Apa Itu Sertifikasi Hijau dan Mengapa Diperlukan?
+#4: Strategi Mewujudkan Ekspor Kayu yang Berkelanjutan
+- meta description : 
+"Menara Bekasi membantu memberikan edukasi mengenai pemilihan kayu ramah lingkungan, sertifikasi hijau, dan proses ekspor berkelanjutan yang sesuai standar internasional."
+- deskripsi singkat :
+Kami berkomitmen mendukung praktik industri kayu yang lebih hijau. Melalui informasi, rekomendasi, dan pengalaman ekspor, Menara Bekasi membantu pelaku usaha memahami pentingnya kelestarian hutan dan keberlanjutan rantai pasok kayu.
+- tagline :
+#KAYURAMAHLINGKUNGAN
+
+
+
+
+
+
+3. buat web dan kompress gambar + alt gambar
+
+4. web responsif
+
+5. menambah rel="noopener noreferrer" untuk keamanan link
+
+6. cta
+https://wa.me/6285817298071
+https://menarabekasilestari.site/
+
+7. hosting web
+https://blogwebmenara.vercel.app/
+
+https://github.com/muqniansyah/blogwebmenara
+
+8. google analytics
+
+9. google search console
+
+10. membuat swiper atau carousel slide untuk backlink seo
+
+11. sharing button bar
+
+10. memasukkan keywoard json
+
+11. buat file sitemap.xml dan robots.txt
+
+12. uji url sudah aktif
+https://blogwebmenara.vercel.app/
+
+13. uji url sitemap sudah aktif
+https://blogwebmenara.vercel.app/sitemap.xml
+
+14. menambah headers keamanan
+
+15. lakukan minify file (belum)

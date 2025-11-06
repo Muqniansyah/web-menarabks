@@ -1,11 +1,160 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Pengertian from "../components/Pengertian.astro";
+import Pentingnya from "../components/Pentingnya.astro";
+import Sertifikasi from "../components/Sertifikasi.astro";
+import Strategi from "../components/Strategi.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Kayu Ramah Lingkungan">
+  <main>
+    <!-- Hero / Jumbotron -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="tagline">#KAYURAMAHLINGKUNGAN</p>
+        <h1>Mengenal Kayu Ramah Lingkungan dan Sertifikasi Hijau untuk Ekspor Berkelanjutan</h1>
+        <p class="subtext">Menghadirkan informasi edukatif seputar kayu berkelanjutan dan sertifikasi hijau.</p>
+      </div>
+    </section>
+
+    <!-- Info Panel -->
+    <section id="informasi" class="info-panel">
+      <div class="info-grid">
+        <div class="info-item">
+          <h4>♻️ Berkelanjutan</h4>
+          <p>Kayu dari hutan yang dikelola secara bertanggung jawab.</p>
+        </div>
+        <div class="info-item">
+          <h4>🌍 Ramah Lingkungan</h4>
+          <p>Mengurangi dampak kerusakan alam dalam proses industri.</p>
+        </div>
+        <div class="info-item">
+          <h4>✅ Bersertifikasi</h4>
+          <p>Diakui secara internasional untuk pasar ekspor.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workingspace / Content -->
+    <section class="workspace">
+      <div class="workspace-media">
+        <video src="/hero.mp4" autoplay muted loop playsinline></video>
+      </div>
+
+      <div class="workspace-text">
+        <h2>Kami Hadir untuk Mendukung Ekspor Kayu Berkelanjutan</h2>
+        <p>Informasi, panduan, dan wawasan mendalam terkait standar industri kayu dunia.</p>
+        <a class="btn-cta">Pesan Sekarang</a>
+      </div>
+    </section>
+
+    <Pengertian />
+  </main>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/hero.jpeg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 40px;
+    }
+    .tagline {
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      font-weight: 300;
+      margin-bottom: 6px;
+      opacity: 0.9;
+    }
+    .hero-content h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .subtext {
+      font-size: 1.1rem;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      opacity: 0.85;
+    }
+    .btn-cta {
+      padding: 10px 26px;
+      background: #0f5132;
+      color: white;
+      border-radius: 50px;
+      font-weight: 500;
+      display: inline-block;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+    }
+    .btn-cta:hover {
+      background: #0a3a24;
+      transform: translateY(-3px);
+    }
+
+    /* INFO PANEL (Neumorphism) */
+    .info-panel {
+      margin-top: -80px;
+      padding: 60px 30px;
+    }
+    .info-grid {
+      display: flex;
+      gap: 20px;
+      background: #e6e9ef;
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow:
+        10px 10px 18px #caced3,
+        -10px -10px 18px #ffffff;
+      justify-content: center;
+      text-align: center;
+    }
+    .info-item h4 {
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    /* WORKSPACE */
+    .workspace {
+      display: flex;
+      align-items: center;
+      padding: 80px 40px;
+      gap: 50px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .workspace-media video {
+      width: 420px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    .workspace-text {
+      max-width: 450px;
+    }
+    .workspace-text h2 {
+      font-size: 1.9rem;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 768px){
+      .info-grid { flex-direction: column; }
+      .workspace { flex-direction: column; text-align: center; }
+      .hero-content h1 { font-size: 1.8rem; }
+    }
+  </style>
 </Layout>

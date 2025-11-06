@@ -1,0 +1,105 @@
+---
+// Tidak perlu script atau props untuk sekarang
+---
+
+<section class="section-pengertian">
+  <div class="container">
+    <h2>🌿 Apa Itu Kayu Ramah Lingkungan?</h2>
+    <p class="intro">
+      Kayu ramah lingkungan adalah kayu yang diperoleh melalui proses pengelolaan hutan yang bertanggung jawab. 
+      Pohon yang ditebang diganti dengan penanaman kembali, habitat alam dijaga, dan proses produksi dilakukan 
+      tanpa merusak keseimbangan ekosistem.
+    </p>
+
+    <div class="card">
+      <h3>Ciri-ciri Kayu Ramah Lingkungan:</h3>
+      <ul>
+        <li>🌱 Berasal dari hutan yang dikelola secara legal dan terencana</li>
+        <li>🔄 Penanaman kembali untuk mengganti pohon yang ditebang</li>
+        <li>🦜 Mendukung pelestarian keanekaragaman hayati</li>
+        <li>✅ Memiliki sertifikasi resmi sebagai bukti legalitas</li>
+      </ul>
+    </div>
+
+    <p class="bridge">
+      Karena kesadaran global terhadap lingkungan semakin meningkat, 
+      kayu ramah lingkungan memiliki peran penting dalam pasar ekspor internasional. 
+      Nah, untuk memastikan kayu benar-benar ramah lingkungan dan legal, diperlukan <b>sertifikasi hijau</b>.
+    </p>
+  </div>
+</section>
+
+<style>
+  .section-pengertian {
+    padding: 80px 20px;
+    background: #f9fafb;
+  }
+
+  .container {
+    max-width: 850px;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  .intro {
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 0.85;
+    margin-bottom: 40px;
+    line-height: 1.7;
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+
+  .card ul {
+    padding-left: 18px;
+    line-height: 1.7;
+  }
+
+  .card li {
+    margin-bottom: 10px;
+    list-style: none;
+  }
+
+  .card li::before {
+    content: "• ";
+    color: #0f5132; /* warna aksen */
+    font-weight: bold;
+    margin-right: 6px;
+  }
+
+  /* Bridge text */
+  .bridge {
+    margin-top: 30px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: center;
+    opacity: 0.9;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    h2 { font-size: 1.7rem; }
+    .intro { font-size: 1rem; }
+    .card { padding: 22px; }
+    .bridge { font-size: 1rem; }
+  }
+</style>
