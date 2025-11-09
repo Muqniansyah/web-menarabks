@@ -5,10 +5,89 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/logo.png" />
 		<meta name="generator" content={Astro.generator} />
+		<!-- Title mengandung keyword -->
 		<title>Menara Bekasi | Mengenal Kayu Ramah Lingkungan dan Sertifikasi Hijau untuk Ekspor Berkelanjutan</title>
+		
+		<!-- Meta Description (SEO friendly) -->
 		<meta name="description" content="Menara Bekasi membantu memberikan edukasi mengenai pemilihan kayu ramah lingkungan, sertifikasi hijau, dan proses ekspor berkelanjutan yang sesuai standar internasional." />
+		
 		<!-- Bootstrap CSS -->
     	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" /> -->
+		
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-09QW6ZWK3T"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-09QW6ZWK3T');
+		</script>
+
+		<!-- Google Search Console Verification -->
+		<meta name="google-site-verification" content="vmcHQ8G9ervQgGmZyGjt12V4MyZwzSjyipkAnykNCIM" />
+
+		<!-- Structured Data: Website -->
+		<script type="application/ld+json">
+		{
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		"name": "Menara Bekasi",
+		"url": "https://web-menarabks.vercel.app/",
+		"description": "Menara Bekasi melayani penjualan kayu ramah lingkungan bersertifikasi SVLK, FSC, dan PEFC untuk kebutuhan ekspor.",
+		"keywords": [
+			"kayu ramah lingkungan",
+			"kayu bersertifikasi ekspor",
+			"SVLK",
+			"FSC",
+			"PEFC",
+			"kayu legal ekspor",
+			"penyedia kayu Indonesia",
+			"Menara Bekasi"
+		]
+		}
+		</script>
+		<!-- Structured Data: FAQPage -->
+		<script type="application/ld+json">
+		{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [
+			{
+			"@type": "Question",
+			"name": "Apa yang dimaksud dengan kayu ramah lingkungan?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Kayu ramah lingkungan adalah kayu yang berasal dari hutan yang dikelola secara berkelanjutan, dengan penebangan terkendali serta penanaman kembali."
+			}
+			},
+			{
+			"@type": "Question",
+			"name": "Apakah kayu ramah lingkungan wajib memiliki sertifikasi?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Ya. Sertifikasi seperti SVLK, FSC, atau PEFC menjadi bukti bahwa kayu diperoleh secara legal dan tidak merusak hutan."
+			}
+			},
+			{
+			"@type": "Question",
+			"name": "Mengapa negara tujuan ekspor sangat ketat soal sumber kayu?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Karena banyak negara menerapkan kebijakan anti-pembalakan liar dan mendukung perdagangan yang berkelanjutan."
+			}
+			},
+			{
+			"@type": "Question",
+			"name": "Apakah PT Menara Bekasi dapat membantu pengurusan kebutuhan ekspor?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Tentu. Kami menyediakan kayu bersertifikasi lengkap serta dukungan proses ekspor mulai dari dokumentasi hingga pengiriman."
+			}
+			}
+		]
+		}
+		</script>
 	</head>
 	<body>
 		<slot />

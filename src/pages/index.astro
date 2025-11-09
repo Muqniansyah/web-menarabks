@@ -165,5 +165,39 @@ import Footer from "../components/Footer.astro";
       .workspace { flex-direction: column; text-align: center; }
       .hero-content h1 { font-size: 1.8rem; }
     }
+
+    @media (max-width: 450px) {
+      .workspace {
+        padding: 50px 20px;
+        gap: 30px;
+        text-align: center;
+      }
+
+      .workspace-media video {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+      }
+
+      .workspace-text {
+        max-width: 100%;
+      }
+
+      .workspace-text h2 {
+        font-size: 1.4rem;
+        line-height: 1.35;
+      }
+
+      .workspace-text p {
+        font-size: 0.95rem;
+        margin-bottom: 18px;
+      }
+
+      .btn-cta {
+        display: inline-block;
+        padding: 12px 22px;
+        font-size: 0.95rem;
+      }
+    }
   </style>
 </Layout>
